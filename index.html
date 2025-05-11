@@ -23,6 +23,8 @@
         }
 
         header img {
+            max-width: 100%;
+            height: auto;
             width: 180px;
         }
 
@@ -57,15 +59,18 @@
 
         .mango-images {
             display: flex;
+            flex-wrap: wrap;
             gap: 10px;
+            justify-content: center;
             margin-bottom: 15px;
         }
 
         .mango-images img {
-            flex: 1;
+            flex: 1 1 45%;
             height: 200px;
             object-fit: cover;
             border-radius: 10px;
+            max-width: 100%;
         }
 
         .mango-card h3 {
@@ -120,7 +125,7 @@
         .video-wrapper {
             position: relative;
             width: 100%;
-            max-width: 300px;
+            max-width: 480px;
             margin: 0 auto;
             padding-bottom: 56.25%;
             height: 0;
@@ -144,21 +149,35 @@
             margin-top: 50px;
         }
 
-        @media (max-width: 600px) {
-            .mango-images {
-                flex-direction: column;
+        @media (max-width: 768px) {
+            .mango-images img {
+                height: 160px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header img {
+                width: 140px;
             }
 
-            .mango-images img {
-                height: 150px;
+            .mango-card h3 {
+                font-size: 20px;
+            }
+
+            .mango-card p {
+                font-size: 15px;
+            }
+
+            .mango-card button {
+                font-size: 14px;
+                padding: 10px 20px;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="aamlogo.png
-        " alt="আম বেয়ারি লোগো">
+        <img src="aamlogo.png" alt="আম বেয়ারি লোগো">
     </header>
 
     <div class="container">
