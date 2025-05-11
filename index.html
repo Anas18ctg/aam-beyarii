@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আম বেয়ারি</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #ffd54f;
+        }
+
+        header {
+            background-color: #ffb300;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            width: 180px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .mango-card {
+            background-color: #fff3e0;
+            border-radius: 15px;
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .mango-card::before {
+            content: "";
+            background: url('logo-no-bg.png') no-repeat center;
+            background-size: 140px;
+            opacity: 0.08;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 140px;
+            height: 140px;
+        }
+
+        .mango-images {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .mango-images img {
+            flex: 1;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .mango-card h3 {
+            color: #e65100;
+            font-size: 24px;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .mango-card p {
+            color: #4e342e;
+            font-size: 17px;
+            margin-bottom: 6px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .mango-card button {
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .mango-card button:hover {
+            background-color: #1b5e20;
+        }
+
+        .mango-card a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .video-section {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .video-section h2 {
+            color: #e65100;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 600px) {
+            .mango-images {
+                flex-direction: column;
+            }
+
+            .mango-images img {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="aamlogo.png.png
+        " alt="আম বেয়ারি লোগো">
+    </header>
+
+    <div class="container">
+        <div class="mango-card">
+            <div class="mango-images">
+                <img src="gopalbhog.jpg.jpg" alt="গোপালভোগ আম ১">
+                <img src="gopalbhog.jpg (2).jpg" alt="গোপালভোগ আম ২">
+            </div>
+            <h3>গোপালভোগ অফার</h3>
+            <p>ঢাকার ভেতরে: ১০৫ টাকা/কেজি</p>
+            <p>ঢাকার বাহিরে: ১২০ টাকা/কেজি</p>
+            <p>সর্বনিম্ন অর্ডার: ১০ কেজি</p>
+            <p>ডেলিভারি: নিকটস্থ কুরিয়ার সার্ভিস থেকে রিসিভ করুন</p>
+            <button><a href="https://forms.gle/y1UL9mC5t6hDBrWV7" target="_blank">অর্ডার করতে ফরম ফিলাপ করুন</a></button>
+        </div>
+
+        <div class="video-section">
+            <h2>আমের খেত ও সংগ্রহ ভিডিও</h2>
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D1632383767354284&show_text=0&width=300"
+                    scrolling="no" 
+                    frameborder="0" 
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>যোগাযোগ: 01831425778/ 01309757663 | ইমেইল: beyari360@gmail.com</p>
+    </footer>
+</body>
+</html>
